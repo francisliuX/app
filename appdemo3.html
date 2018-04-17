@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>睿智</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/test.css">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        function nofind(_this){
+            _this.src="./img/default.gif";
+            _this.onerror=null;
+        }
+    </script>
+    <script>
+
+        //这是用js 监听屏幕的大小来改变根元素的font-size
+        (function(win,doc){
+            function change(){
+                doc.documentElement.style.fontSize = doc.documentElement.clientWidth*20/320 +'px';
+            }
+            change();
+            win.addEventListener('resize',change,false);
+        })(window,document);
+    </script>
+</head>
+<body>
+<nav class="navbar  navbar-fixed-top" style="margin-bottom: 0px;">
+    <form class="form-horizontal  fixedtop">
+        <div class="form-group" style="font-size: 10px; color:#fff;">
+            <div class="col-xs-3">
+                <label for="ruizhi" class="control-label" style="text-align: center;display: block;">睿智</label>
+            </div>
+            <div class="col-xs-6">
+                <input type="text" class="form-control" id="ruizhi" placeholder="请输入您要搜索的内容">
+            </div>
+            <div class="col-xs-3">
+                <label for="ruizhi" class="control-label">位置</label>>
+            </div>
+        </div>
+    </form>
+   </nav>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox" id="box">
+        <div class="item active slider">
+            <img data-src="holder.js/1140x500/auto/#777:#555/text:First slide" src="img/aa.jpg" alt="First slide" onerror="nofind(this)">
+        </div>
+        <div class="item slider">
+            <img data-src="holder.js/1140x500/auto/#666:#444/text:Second slide" src="img/bb.jpg" alt="Second slide" onerror="nofind(this)">
+        </div>
+        <div class="item slider">
+            <img data-src="js/holder.js/1140x500/auto/#555:#333/text:Third slide" src="img/cc.jpg" alt="Third slide" onerror="nofind(this)">
+        </div>
+    </div>
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div id="newviewport" class="viewport-new">
+    <div id="appcenter" class="floor box-enter">
+        <div class="floor-item">
+            <div class="position-r">
+                <div class="container-bg quick-nav-box">
+                </div>
+                <nav class="quick-entry-nav position-ab     quick-nav-five " style="overflow: hidden;">
+
+                    <a class="quick-entry-link fz12 col-xs-3 col-sm-3"  href="">
+                        <span class=""><img width="30" height="30" src="img/icon/1.png" onerror="nofind(this)"></span>
+                            <p>全部商品</p>
+                    </a>
+
+                    <a class="quick-entry-link fz12 col-xs-3 col-sm-3"  href="">
+                        <span class="quick-box"><img width="30" height="30" src="img/icon/2.png" onerror="nofind(this)"></span>
+                        <p>店铺街</p>
+                    </a>
+
+                    <a class="quick-entry-link fz12 col-xs-3 col-sm-3"  href="">
+                        <span class="quick-box"><img width="30" height="30" src="img/icon/3.png" onerror="nofind(this)"></span>
+                        <p>团购</p>
+                    </a>
+
+                    <a class="quick-entry-link fz12 col-xs-3 col-sm-3"  href="">
+                        <span class="quick-box"><img width="30" height="30" src="img/icon/4.png" onerror="nofind(this)"></span>
+                        <p>优惠活动</p>
+                    </a>
+
+                    <a class="quick-entry-link fz12 col-xs-3 col-sm-3" href="">
+                        <span class="quick-box"><img width="30" height="30" src="img/icon/5.png" onerror="nofind(this)"></span>
+                        <p>品牌街</p>
+                    </a>
+
+                    <a class="quick-entry-link fz12 col-xs-3 col-sm-3" href="">
+                        <span class="quick-box"><img width="30" height="30" src="img/icon/6.png" onerror="nofind(this)"></span>
+                        <p>积分商城</p>
+                    </a>
+
+                    <a class="quick-entry-link fz12 col-xs-3 col-sm-3" href="">
+                        <span class="quick-box"><img width="30" height="30" src="img/icon/7.png" onerror="nofind(this)"></span>
+                        <p>购物车</p>
+                    </a>
+
+                    <a class="quick-entry-link fz12 col-xs-3 col-sm-3" href="">
+                        <span class="quick-box"><img width="30" height="30" src="img/icon/8.png" onerror="nofind(this)"></span>
+                        <p>个人中心</p>
+                    </a>
+
+
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container">
+<!---------------------------------->
+<!---------------------------------->
+    <div class="row row-offcanvas row-offcanvas-right" >
+        <div class="col-lg-12 masthead" style="position: relative;">
+            <!--<h5>精选活动</h5>-->
+            <!--<hr/>-->
+            <div style="margin-left: 6rem;position: absolute;margin-top: -10px;background: #fff;">
+                <span>精选活动</span>
+            </div>
+            <hr>
+        </div>
+        <div class="col-lg-12  middle_img">
+
+            <div class="row">
+                <div class="col-lg-2 col-xs-6 col-sm-3">
+                    <!--跳转到活动页面-->
+                    <a href="" style="vertical-align: middle;display: block;">
+                        <span style="text-align: center; display: block;">
+                            <img style="display: inline;" src="img/middle/1.jpg" onerror="nofind(this)" class="img-responsive">
+                        </span>
+                    </a>
+
+                    <br/>
+                </div>
+                <div class="col-lg-2 col-xs-6 col-sm-3">
+                    <a href="" style="vertical-align: middle;display: block;">
+                        <span style="text-align: center; display: block;">
+                            <img style="display: inline;" src="img/middle/2.jpg" onerror="nofind(this)" class="img-responsive">
+                        </span>
+                    </a>
+
+                    <br/>
+                </div>
+                <div class="col-lg-2 col-xs-6 col-sm-3">
+                    <a href="" style="vertical-align: middle;display: block;">
+                        <span style="text-align: center; display: block;">
+                            <img style="display: inline;" src="img/middle/2.jpg" class="img-responsive">
+                        </span>
+                    </a>
+                    <br/>
+                </div>
+                <div class="col-lg-2 col-xs-6 col-sm-3">
+                    <a href="" style="vertical-align: middle;display: block;">
+                        <span style="text-align: center; display: block;">
+                            <img style="display: inline;" src="img/middle/1.jpg" class="img-responsive">
+                        </span>
+                    </a>
+                    <br/>
+                </div>
+                <!--<div class="col-lg-2 col-xs-6 col-sm-3">-->
+
+                    <!--<a href="" style="vertical-align: middle;display: block;">-->
+                        <!--<span style="text-align: center; display: block;">-->
+                            <!--<img style="display: inline;" src="img/middle/1.jpg" class="img-responsive">-->
+                        <!--</span>-->
+                    <!--</a>-->
+
+                    <!--<br/>-->
+                <!--</div>-->
+                <!--<div class="col-lg-2 col-xs-6 col-sm-3">-->
+                    <!--<a href="" style="vertical-align: middle;display: block;">-->
+                        <!--<span style="text-align: center; display: block;">-->
+                            <!--<img style="display: inline;" src="img/middle/2.jpg" class="img-responsive">-->
+                        <!--</span>-->
+                    <!--</a>-->
+
+                    <!--<br/>-->
+                <!--</div>-->
+            </div>
+
+        </div>
+
+        <div class="col-lg-12 masthead" style="position: relative;">
+
+            <div style="margin-left: 5rem;position: absolute;margin-top: -10px;background: #fff;">
+                <span>实力合作商家</span>
+            </div>
+            <hr>
+        </div>
+
+        <div class="col-lg-12">
+
+            <div class="row">
+                <div class="col-xs-3 col-sm-3">
+                    <a href="" style="vertical-align: middle;display: block;">
+                      <span style="text-align: center; display: block;">
+                         <img  style="vertical-align: middle; display: inline;" src="img/logo/佳宁电子.jpg" onerror="nofind(this)" class="img-responsive">
+                      </span>
+                    </a>
+                    <a href="" style="text-align: center;display: block;">佳宁电子</a>
+                    <br/>
+                </div>
+                <div class="col-xs-3 col-sm-3">
+                    <a href="" style="vertical-align: middle;display: block;">
+                      <span style="text-align: center; display: block;">
+                         <img  style="vertical-align: middle; display: inline;" src="img/logo/华鸿阳光.jpg" onerror="nofind(this)" class="img-responsive">
+                      </span>
+                    </a>
+                    <a href="" style="text-align: center;display: block;">华鸿阳光</a>
+                    <br/>
+                </div>
+                <div class="col-xs-3 col-sm-3">
+                    <a href="" style="vertical-align: middle;display: block;">
+                      <span style="text-align: center; display: block;">
+                         <img  style="vertical-align: middle; display: inline;" src="img/logo/新东林.jpg" onerror="nofind(this)" class="img-responsive">
+                      </span>
+                    </a>
+                    <a href="" style="text-align: center;display: block;">新东林</a>
+                    <br/>
+                </div>
+                <div class="col-xs-3 col-sm-3">
+                    <a href="" style="vertical-align: middle;display: block;">
+                      <span style="text-align: center; display: block;">
+                         <img  style="vertical-align: middle; display: inline;" src="img/logo/华星城.jpg" onerror="nofind(this)" class="img-responsive">
+                      </span>
+                    </a>
+                    <a href="" style="text-align: center;display: block;">华星城</a>
+                    <br/>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-12 masthead" style="position: relative;">
+
+            <div style="margin-left: 6rem;position: absolute;margin-top: -10px;background: #fff;">
+                <span>手机数码</span>
+            </div>
+            <hr>
+        </div>
+
+        <div class="col-lg-12">
+
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <a href="" style="vertical-align: middle;display: block;">
+                      <span style="text-align: center; display: block;">
+                         <img  style="width: 90px;vertical-align: middle; display: inline;" src="img/computer/a.jpg" onerror="nofind(this)" class="img-responsive">
+                      </span>
+                    </a>
+                    <a href="" style="text-align: center;display: block;">苹果IPhone-8/PLUS手机 5.5英寸/全网通/64GB/1300</a>
+                    <p style="color:red;padding-top:10px ;padding-left: 20px;">
+                        <span>￥</span>
+                        <span>88.88</span>
+                    </p>
+                    <a><img style=" position: absolute; bottom: 13px; right: 35px;" src="img/index.png" onerror="nofind(this)" alt=""></a>
+                    <br/>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="" style="vertical-align: middle;display: block;">
+                      <span style="text-align: center; display: block;">
+                         <img  style="width: 90px;vertical-align: middle; display: inline;" src="img/computer/b.jpg" onerror="nofind(this)" class="img-responsive">
+                      </span>
+                    </a>
+                    <a href="" style="text-align: center;display: block;">苹果IPhone-8/PLUS手机 5.5英寸/全网通/64GB/1300</a>
+                    <p style="color:red;padding-top:10px ;padding-left: 20px;">
+                        <span>￥</span>
+                        <span>88.88</span>
+                    </p>
+                    <a><img style=" position: absolute; bottom: 13px; right: 35px;" src="img/index.png" onerror="nofind(this)" alt=""></a>
+                    <br/>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="" style="vertical-align: middle;display: block;">
+                      <span style="text-align: center; display: block;">
+                         <img  style="width: 90px;vertical-align: middle; display: inline;" src="img/computer/c.jpg" onerror="nofind(this)" class="img-responsive">
+                      </span>
+                    </a>
+                    <a href="" style="text-align: center;display: block;">小米（MI）红米5A 手机 5.0英寸/2+16GB/全网通/前</a>
+                    <p style="color:red;padding-top:10px ;padding-left: 20px;">
+                        <span>￥</span>
+                        <span>88.88</span>
+                    </p>
+                    <a><img style=" position: absolute; bottom: 13px; right: 35px;" src="img/index.png" onerror="nofind(this)" alt=""></a>
+                    <br/>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="" style="vertical-align: middle;display: block;">
+                      <span style="text-align: center; display: block;">
+                         <img  style="width: 90px;vertical-align: middle; display: inline;" src="img/computer/d.jpg" onerror="nofind(this)" class="img-responsive">
+                      </span>
+                    </a>
+                    <a href="" style="text-align: center;display: block;">小米（MI）红米5 手机 5.7英寸/3+32GB/全网通/前</a>
+                    <p style="color:red;padding-top:10px ;padding-left: 20px;">
+                        <span>￥</span>
+                        <span>88.88</span>
+                    </p>
+                    <a><img style=" position: absolute; bottom: 13px; right: 35px;" src="img/index.png" onerror="nofind(this)" alt=""></a>
+                    <br/>
+                </div>
+
+            </div>
+
+        </div>
+<!------------------------------------->
+        <div class="col-lg-12 masthead" style="position: relative;">
+
+            <div style="margin-left: 6rem;position: absolute;margin-top: -10px;background: #fff;">
+                <span>整机电脑</span>
+            </div>
+            <hr>
+        </div>
+
+
+
+        <div class="col-lg-12">
+
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <a href="" style="vertical-align: middle;display: block;">
+                      <span style="text-align: center; display: block;">
+                         <img  style="width: 90px;vertical-align: middle; display: inline;" src="img/computer/a.jpg" onerror="nofind(this)" class="img-responsive">
+                      </span>
+                    </a>
+                    <a href="" style="text-align: center;display: block;">苹果 iPad mini 4 平板电脑 7.9英寸/128GB/WLAN</a>
+                    <p style="color:red;padding-top:10px ;padding-left: 20px;">
+                        <span>￥</span>
+                        <span>88.88</span>
+                    </p>
+                    <a><img style=" position: absolute; bottom: 13px; right: 35px;" src="img/index.png" onerror="nofind(this)" alt=""></a>
+                    <br/>
+                </div>
+
+
+                <div class="col-xs-6 col-sm-3">
+                    <a href="" style="vertical-align: middle;display: block;">
+                      <span style="text-align: center; display: block;">
+                         <img  style="width: 90px;vertical-align: middle; display: inline;" src="img/computer/b.jpg" onerror="nofind(this)" class="img-responsive">
+                      </span>
+                    </a>
+                    <a href="" style="text-align: center;display: block;">联想(Lenovo)Ideapad310s-15 I5-7200/4G/1T/无光</a>
+                    <p style="color:red;padding-top:10px ;padding-left: 20px;">
+                        <span>￥</span>
+                        <span>88.88</span>
+                    </p>
+                    <a><img style=" position: absolute; bottom: 13px; right: 35px;" src="img/index.png" onerror="nofind(this)" alt=""></a>
+                    <br/>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="" style="vertical-align: middle;display: block;">
+                      <span style="text-align: center; display: block;">
+                         <img  style="width: 90px;vertical-align: middle; display: inline;" src="img/computer/c.jpg" onerror="nofind(this)" class="img-responsive">
+                      </span>
+                    </a>
+                    <a href="" style="text-align: center;display: block;">联想(Lenovo)扬天V110-15 i5-7200U/4G/500G/无光</a>
+                    <p style="color:red;padding-top:10px ;padding-left: 20px;">
+                        <span>￥</span>
+                        <span>88.88</span>
+                    </p>
+                    <a><img style=" position: absolute; bottom: 13px; right: 35px;" src="img/index.png" onerror="nofind(this)" alt=""></a>
+                    <br/>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="" style="vertical-align: middle;display: block;">
+                      <span style="text-align: center; display: block;">
+                         <img  style="width: 90px;vertical-align: middle; display: inline;" src="img/computer/d.jpg" onerror="nofind(this)" class="img-responsive">
+                      </span>
+                    </a>
+                    <a href="" style="text-align: center;display: block;">DELL(戴尔)OptiPlex3050 I5-7500/4G/1T/DVDRW/集</a>
+                    <p style="color:red;padding-top:10px ;padding-left: 20px;">
+                        <span>￥</span>
+                        <span>88.88</span>
+                    </p>
+                    <a><img style=" position: absolute; bottom: 13px; right: 35px;" src="img/index.png" onerror="nofind(this)" alt=""></a>
+                    <br/>
+                </div>
+
+            </div>
+
+        </div>
+<!------------------------------------->
+    </div><!--/row-->
+
+    <hr>
+
+    <footer>
+        <p>© Company 2014</p>
+    </footer>
+
+</div>
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="js/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
