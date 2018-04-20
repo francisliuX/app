@@ -5,6 +5,10 @@
     position: relative;
     margin:0 auto;
 }
+body a{
+    color: #000;
+}
+
 #box .slider{
     width:96rem;
     height: 7.5rem;
@@ -20,7 +24,9 @@
     line-height: 7.5rem;
     text-align: center;
 }
-
+.fixedtop{
+    margin-top: 4px;
+}
 .floor-item, .floor-item-slide {
     width: 100%;
     font-size: 100%;
@@ -42,8 +48,8 @@
     width: 25%;
     float: left;
     position: relative;
-    color: #686868;
-    font-size: .6875rem;
+    color: #000;
+    font-size: .65rem;
     display: block;
     text-align: center;
     font-family: PingFang-Medium,PingFangSC-Regular,Helvetica;
@@ -95,4 +101,8 @@
     /*-webkit-border-radius: 10px;*/
     /*-moz-border-radius: 10px;*/
     /*border-radius: 10px;*/
+}
+
+.col-xs-6 a{
+    font-size: 12pxs;
 }
